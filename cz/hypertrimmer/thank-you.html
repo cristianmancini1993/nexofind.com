@@ -2,14 +2,24 @@
 <html lang="cs">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18360728507"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18412239679"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'AW-18360728507');
+  gtag('config', 'AW-18412239679');
+  gtag('config', 'AW-18412106936');
 </script>
+<!-- Event snippet for Acquisto conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18412106936/h7gnCMeGkOocELjpyctE',
+      'transaction_id': ''
+      // 'new_customer': true /* calculate dynamically, populate with true/false */,
+  });
+</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Objednávka přijata — Čekejte na potvrzovací hovor | HyperTrimmer™ 3000</title>
@@ -200,7 +210,7 @@ window.SITE_CONFIG = {
   PRICE: 1949,
   META_PIXEL_ID: '',
   GOOGLE_TAG_ID: '',
-  GOOGLE_ADS_CONVERSION_SEND_TO: 'AW-18360728507/piRMCJP23tkcEOiR9rJE',
+  GOOGLE_ADS_CONVERSION_SEND_TO: 'AW-18412106936/h7gnCMeGkOocELjpyctE',
   CONVERSION_VALUE: 1.0,
   CONVERSION_CURRENCY: 'USD',
   CASHBOLT_OFFER_ID: '754',
@@ -292,23 +302,14 @@ window.SITE_CONFIG = {
     <div>
       <h4 class="site-footer__heading">Kontakt</h4>
       <ul class="site-footer__list">
-        <li><strong>Vicequattrostrade Srl</strong></li>
-        <li>Via Giosuè Carducci, 30, 28838 Stresa, Italy</li>
+        <li><strong>CAPITALADV S.R.L.</strong></li>
+        <li>Corso Buenos Aires 64, 20124 Milano, Italia</li>
         <li><a href="mailto:info@nexofind.com">info@nexofind.com</a></li>
       </ul>
     </div>
   </div>
-  <div class="site-footer__bottom">© <span data-year>2026</span> <strong>Vicequattrostrade Srl</strong> — Všechna práva vyhrazena. <a href="/">nexofind.com</a></div>
+  <div class="site-footer__bottom">© <span data-year>2026</span> <strong>CAPITALADV S.R.L.</strong> — Všechna práva vyhrazena. <a href="/">nexofind.com</a></div>
 </div></footer>
-
-<!-- Event snippet for Purchase conversion page (solo dopo submit Cashbolt) -->
-<script>
-  window.addEventListener('load', function () {
-    if (window.fireLifepickshopThankYouConversion) {
-      window.fireLifepickshopThankYouConversion();
-    }
-  });
-</script>
 
 </body>
 </html>

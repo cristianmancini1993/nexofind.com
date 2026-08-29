@@ -7,7 +7,7 @@ Static HTML/CSS/JS multi-geo e-commerce site for Cash On Delivery campaigns (Met
 ## Quick facts
 
 - **Domain**: nexofind.com
-- **Company**: Vicequattrostrade Srl — Via Giosuè Carducci, 30, 28838 Stresa, Italy
+- **Company**: CAPITALADV S.R.L. — Corso Buenos Aires 64, 20124 Milano, Italia
 - **Contact email**: info@nexofind.com (auto-derived from domain)
 - **First product**: HyperTrimmer™ 3000 (slug: `hypertrimmer`) — battery-powered grass trimmer
 - **Geos active**: 18 (it, es, fr, de, pt, gr, bg, ro, cz, pl, ee, lv, lt, hr, hu, si, sk, en)
@@ -143,6 +143,6 @@ Then add the product card to each `[geo]/index.html` and the URLs to `sitemap.xm
 
 ## License & ownership
 
-© 2026 Vicequattrostrade Srl — All rights reserved.
+© 2026 CAPITALADV S.R.L. — All rights reserved.
 
 Generated with the Landing Factory multi-geo static template.

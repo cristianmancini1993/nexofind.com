@@ -1125,15 +1125,15 @@ window.SITE_CONFIG = {{
       <div>
         <h4 class="site-footer__heading">{contacts}</h4>
         <ul class="site-footer__list">
-          <li><strong>Vicequattrostrade Srl</strong></li>
-          <li>Via Giosuè Carducci, 30</li>
-          <li>28838 Stresa, Italy</li>
+          <li><strong>CAPITALADV S.R.L.</strong></li>
+          <li>Corso Buenos Aires 64</li>
+          <li>20124 Milano, Italia</li>
           <li><a href="mailto:info@nexofind.com">info@nexofind.com</a></li>
         </ul>
       </div>
     </div>
     <div class="site-footer__bottom">
-      © <span data-year>2026</span> <strong>Vicequattrostrade Srl</strong> — {rights}.
+      © <span data-year>2026</span> <strong>CAPITALADV S.R.L.</strong> — {rights}.
       <a href="/">nexofind.com</a>
     </div>
   </div>

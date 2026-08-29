@@ -6,7 +6,7 @@
 (function () {
   const C = window.SITE_CONFIG || {};
   const CLICK_ID_KEYS = ['gclid', 'gbraid', 'wbraid'];
-  const DEFAULT_GOOGLE_ADS_SEND_TO = 'AW-18360728507/piRMCJP23tkcEOiR9rJE';
+  const DEFAULT_GOOGLE_ADS_SEND_TO = 'AW-18412106936/h7gnCMeGkOocELjpyctE';
   const CASHBOLT_SUBMIT_SESSION_KEY = 'df_cashbolt_submit';
 
   function getURLParam(name) {
@@ -207,6 +207,11 @@
   window.fireLifepickshopThankYouConversion = function (options) {
     options = options || {};
     const cfg = window.SITE_CONFIG || {};
+
+    // Official Acquisto snippet on thank-you pages already sends this conversion.
+    if (/thank-you\.html/i.test(window.location.pathname)) {
+      return false;
+    }
 
     if (!shouldFireThankYouConversion()) {
       if (cfg.DEBUG_TRACKING) {
