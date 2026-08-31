@@ -81,7 +81,6 @@ window.SITE_CONFIG = {
 </script>
 <script src="/assets/js/tracking.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
-<script src="/assets/js/form-handler.js" defer></script>
 </head>
 <body class="trimmer-9999x">
 
@@ -234,20 +233,35 @@ window.SITE_CONFIG = {
 
 <section class="tx-form-section" id="FORM">
   <div class="tx-form-card">
-    <form class="cod-form tx-cod-form" novalidate aria-label="Trimmer 9 PRO 1899 Kč | Česko">
+    <form class="tm-order-form tx-cod-form" action="https://offers.adricenetwork.com/forms/html/" method="post" aria-label="Trimmer 9 PRO 1899 Kč | Česko">
       <div class="cod-form__field">
-        <label class="cod-form__label" for="name">Jméno a příjmení</label>
-        <input class="cod-form__input" id="name" type="text" name="name" autocomplete="name" placeholder="Jan Novák" required minlength="3">
+        <label class="cod-form__label" for="postal-code">Poštovní směrovací číslo*</label>
+        <input class="cod-form__input" id="postal-code" type="text" name="postal-code" autocomplete="postal-code" placeholder="Poštovní směrovací číslo" required>
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="phone">Telefonní číslo</label>
-        <input class="cod-form__input" id="phone" type="tel" name="phone" autocomplete="tel" placeholder="+420 777 123 456" required>
+        <label class="cod-form__label" for="address-level2">Město</label>
+        <input class="cod-form__input" id="address-level2" type="text" name="address-level2" autocomplete="address-level2" placeholder="Město">
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="address">Doručovací adresa</label>
-        <input class="cod-form__input" id="address" type="text" name="address" autocomplete="street-address" placeholder="Ulice 10, 110 00 Praha" required minlength="10">
+        <label class="cod-form__label" for="street-address">Adresa*</label>
+        <input class="cod-form__input" id="street-address" type="text" name="street-address" autocomplete="street-address" placeholder="Adresa" required>
       </div>
-      <button type="submit">POTVRDIT OBJEDNÁVKU</button>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="tel">Telefon*</label>
+        <input class="cod-form__input" id="tel" type="tel" name="tel" autocomplete="tel" placeholder="Telefon" required>
+      </div>
+      <div class="cod-form__field">
+        <label class="cod-form__label" for="name">Jméno a příjmení*</label>
+        <input class="cod-form__input" id="name" type="text" name="name" autocomplete="name" placeholder="Jméno a příjmení" required>
+      </div>
+      <input name="uid" type="hidden" value="0198c21d-3f64-7778-ab2d-90527716c341">
+      <input name="offer" type="hidden" value="2645">
+      <input name="lp" type="hidden" value="2672">
+      <input name="thankyoupage" type="hidden" value="https://nexofind.com/cz/trimmer-9999x/thank-you.html">
+      <input name="webhook" type="hidden" value="https://hook.eu2.make.com/7nudarijfrsvnhnwfnpqfh2t8vqt109i">
+      <input name="_key" type="hidden" value="cdb27e18309b8ea8c3befe991cd7d173f3579cd2">
+      <button name="submit" type="submit">Odeslat objednávku</button>
+      <script src="https://offers.adricenetwork.com/forms/html/js-v2/" async></script>
     </form>
   </div>
 </section>

@@ -81,7 +81,6 @@ window.SITE_CONFIG = {
 </script>
 <script src="/assets/js/tracking.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
-<script src="/assets/js/form-handler.js" defer></script>
 </head>
 <body class="trimmer-9999x">
 
@@ -234,20 +233,27 @@ window.SITE_CONFIG = {
 
 <section class="tx-form-section" id="FORM">
   <div class="tx-form-card">
-    <form class="cod-form tx-cod-form" novalidate aria-label="Trimmer 9 PRO 74€ | España">
+    <form class="tm-order-form tx-cod-form" action="https://offers.adricenetwork.com/forms/html/" method="post" aria-label="Trimmer 9 PRO 74€ | España">
       <div class="cod-form__field">
-        <label class="cod-form__label" for="name">Nombre y apellidos</label>
-        <input class="cod-form__input" id="name" type="text" name="name" autocomplete="name" placeholder="Mario García" required minlength="3">
+        <label class="cod-form__label" for="name">Nombre Apellido*</label>
+        <input class="cod-form__input" id="name" type="text" name="name" autocomplete="name" placeholder="Nombre Apellido" required>
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="phone">Número de teléfono</label>
-        <input class="cod-form__input" id="phone" type="tel" name="phone" autocomplete="tel" placeholder="+34 612 345 678" required>
+        <label class="cod-form__label" for="street-address">Dirección*</label>
+        <input class="cod-form__input" id="street-address" type="text" name="street-address" autocomplete="street-address" placeholder="Dirección" required>
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="address">Dirección de entrega</label>
-        <input class="cod-form__input" id="address" type="text" name="address" autocomplete="street-address" placeholder="Calle Mayor 10, 28013 Madrid" required minlength="10">
+        <label class="cod-form__label" for="tel">Teléfono*</label>
+        <input class="cod-form__input" id="tel" type="tel" name="tel" autocomplete="tel" placeholder="Teléfono" required>
       </div>
-      <button type="submit">CONFIRMAR PEDIDO</button>
+      <input name="uid" type="hidden" value="0198c21d-3f64-7778-ab2d-90527716c341">
+      <input name="offer" type="hidden" value="1815">
+      <input name="lp" type="hidden" value="1835">
+      <input name="thankyoupage" type="hidden" value="https://nexofind.com/es/trimmer-9999x/thank-you.html">
+      <input name="webhook" type="hidden" value="https://hook.eu2.make.com/7nudarijfrsvnhnwfnpqfh2t8vqt109i">
+      <input name="_key" type="hidden" value="856b5671fbfa784b3d05bd41fb8a08636ee63d9e">
+      <button name="submit" type="submit">Haz tu pedido</button>
+      <script src="https://offers.adricenetwork.com/forms/html/js-v2/" async></script>
     </form>
   </div>
 </section>

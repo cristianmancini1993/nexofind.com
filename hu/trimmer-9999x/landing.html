@@ -81,7 +81,6 @@ window.SITE_CONFIG = {
 </script>
 <script src="/assets/js/tracking.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
-<script src="/assets/js/form-handler.js" defer></script>
 </head>
 <body class="trimmer-9999x">
 
@@ -234,20 +233,27 @@ window.SITE_CONFIG = {
 
 <section class="tx-form-section" id="FORM">
   <div class="tx-form-card">
-    <form class="cod-form tx-cod-form" novalidate aria-label="Trimmer 9 PRO 24900 Ft | Magyarország">
+    <form class="tm-order-form tx-cod-form" action="https://offers.adricenetwork.com/forms/html/" method="post" aria-label="Trimmer 9 PRO 24900 Ft | Magyarország">
       <div class="cod-form__field">
-        <label class="cod-form__label" for="name">Név és vezetéknév</label>
-        <input class="cod-form__input" id="name" type="text" name="name" autocomplete="name" placeholder="Kovács János" required minlength="3">
+        <label class="cod-form__label" for="name">Név*</label>
+        <input class="cod-form__input" id="name" type="text" name="name" autocomplete="name" placeholder="Név" required>
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="phone">Telefonszám</label>
-        <input class="cod-form__input" id="phone" type="tel" name="phone" autocomplete="tel" placeholder="+36 30 123 4567" required>
+        <label class="cod-form__label" for="street-address">Cím*</label>
+        <input class="cod-form__input" id="street-address" type="text" name="street-address" autocomplete="street-address" placeholder="Cím" required>
       </div>
       <div class="cod-form__field">
-        <label class="cod-form__label" for="address">Szállítási cím</label>
-        <input class="cod-form__input" id="address" type="text" name="address" autocomplete="street-address" placeholder="Fő utca 10, 1051 Budapest" required minlength="10">
+        <label class="cod-form__label" for="tel">Telefon*</label>
+        <input class="cod-form__input" id="tel" type="tel" name="tel" autocomplete="tel" placeholder="Telefon" required>
       </div>
-      <button type="submit">RENDELÉS MEGERŐSÍTÉSE</button>
+      <input name="uid" type="hidden" value="0198c21d-3f64-7778-ab2d-90527716c341">
+      <input name="offer" type="hidden" value="1820">
+      <input name="lp" type="hidden" value="1840">
+      <input name="thankyoupage" type="hidden" value="https://nexofind.com/hu/trimmer-9999x/thank-you.html">
+      <input name="webhook" type="hidden" value="https://hook.eu2.make.com/7nudarijfrsvnhnwfnpqfh2t8vqt109i">
+      <input name="_key" type="hidden" value="82ebeb35b70348d39060fbe4912f04a72fca930b">
+      <button name="submit" type="submit">Rendeljen most</button>
+      <script src="https://offers.adricenetwork.com/forms/html/js-v2/" async></script>
     </form>
   </div>
 </section>
