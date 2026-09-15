@@ -61,6 +61,19 @@ window.SITE_CONFIG = {
   .trim-hero h1 { font-size: 46px; line-height: 1.04; letter-spacing: -1.2px; }
 }
 </style>
+<style>
+.reviews-section--galleria .reviews-header { margin-bottom: 28px; }
+.reviews-section--galleria .reviews-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.reviews-section--galleria .review-card { max-width: none; margin: 0; border-radius: 18px; }
+.reviews-section--galleria .review-image img { aspect-ratio: 1 / 1; object-fit: cover; }
+@media (max-width: 1024px) {
+  .reviews-section--galleria .reviews-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+}
+@media (max-width: 900px) {
+  .reviews-section--galleria .reviews-grid { gap: 10px; }
+  .reviews-section--galleria .review-card { border-radius: 14px; border-width: 1px; }
+}
+</style>
 </head>
 <body>
 <div class="announce-bar" role="status">JETZT -50% AUF ORELUX™</div>
@@ -309,6 +322,35 @@ window.SITE_CONFIG = {
     </div>
     <div class="t77bn-cta-wrap">
       <a href="#FORM" class="t77bn-cta">JETZT BESTELLEN</a>
+    </div>
+  </div>
+</section>
+<section class="reviews-section reviews-section--galleria">
+  <div class="reviews-wrap">
+    <div class="reviews-header">
+      <h2>Orelux™ im Einsatz</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-image">
+          <img decoding="async" loading="lazy" src="/assets/img/products/orelux/orelux-09.webp" alt="Orelux™ Akku-Kettensäge im Transportkoffer mit zwei 48V-Akkus, Ladegerät, Handschuhen und Anleitung" width="1000" height="1000">
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-image">
+          <img decoding="async" loading="lazy" src="/assets/img/products/orelux/orelux-10.webp" alt="Orelux™ Akku-Kettensäge mit zwei Akkus, Doppelladegerät und Handschuhen auf der Werkbank" width="1000" height="1000">
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-image">
+          <img decoding="async" loading="lazy" src="/assets/img/products/orelux/orelux-11.webp" alt="Orelux™ Akku-Kettensäge mit Sägespänen nach der Arbeit im Garten" width="1000" height="1000">
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-image">
+          <img decoding="async" loading="lazy" src="/assets/img/products/orelux/orelux-12.webp" alt="Mann sägt mit der Orelux™ Akku-Kettensäge einen Baumstamm auf dem Sägebock" width="1000" height="1000">
+        </div>
+      </div>
     </div>
   </div>
 </section>
