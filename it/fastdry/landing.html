@@ -29,6 +29,25 @@
       margin-bottom: 20px;
     }
   }
+
+  /* barra sempre incollata in alto: "sticky" si rompe perché il body ha overflow-x: hidden */
+  .announce-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+  }
+
+  body {
+    padding-top: 38px;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      padding-top: 43px;
+    }
+  }
 </style>
 <script type="application/ld+json">
 {
