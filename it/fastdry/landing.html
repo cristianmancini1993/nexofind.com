@@ -30,7 +30,14 @@
     }
   }
 
-  /* barra sempre incollata in alto: "sticky" si rompe perché il body ha overflow-x: hidden */
+  /* il clip su html e body fa scorrere la pagina dentro al body: su iOS questo muove anche
+     gli elementi fissi. Questa pagina non usa trucchi a 100vw, quindi il clip non serve. */
+  html,
+  body {
+    overflow-x: visible;
+  }
+
+  /* barra sempre incollata in alto, anche su iOS */
   .announce-bar {
     position: fixed;
     top: 0;
